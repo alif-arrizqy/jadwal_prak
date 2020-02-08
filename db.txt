@@ -1,0 +1,8 @@
+jadwal_prak
+	login
+	tb_asdos
+	tb_jdwl_ganjil
+	tb_jdwl_genap
+	tb_matkul_ganjil
+	tb_matkul_genap
+	tb_slider
