@@ -47,7 +47,7 @@ function slider($koneksi)
       $output .= '<div class="item">';
     }
     $output .= '
-   <img src="images/' . $row["gambar"] . '" style=" margin: auto; width:600px; height:245px;"/>
+   <img src="images/' . $row["gambar"] . '" style=" margin: auto; width:600px; height:auto"/>
    <div class="carousel-caption">
     <h3>' . $row["caption"] . '</h3>
    </div>

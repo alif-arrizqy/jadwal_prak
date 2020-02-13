@@ -4,7 +4,8 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta http-equiv='Refresh' content="60; URL=index.php"> <!-- setiap 1 menit akan refresh -->
+  <!-- setiap 1 menit akan refresh -->
+  <meta http-equiv='Refresh' content="60; URL=index.php"> 
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,24 +31,24 @@
     $jdw6 = "16:00";
 
     if($time == $jdw1) {
-      echo "<meta http-equiv='Refresh' content='0; URL=index.php' />";
+      echo "<meta http-equiv='Refresh' content='60; URL=index.php' />";
       // $url=$_SERVER['REQUEST_URI']; 
       // header("Refresh: 10; URL=$url");
     }
     if($time == $jdw2) {
-      echo "<meta http-equiv='Refresh' content='0; URL=index.php' />";
+      echo "<meta http-equiv='Refresh' content='60; URL=index.php' />";
     }
     if($time == $jdw3) {
-      echo "<meta http-equiv='Refresh' content='0; URL=index.php' />";
+      echo "<meta http-equiv='Refresh' content='60; URL=index.php' />";
     }
     if($time == $jdw4) {
-      echo "<meta http-equiv='Refresh' content='0; URL=index.php' />";
+      echo "<meta http-equiv='Refresh' content='60; URL=index.php' />";
     }
     if($time == $jdw5) {
-      echo "<meta http-equiv='Refresh' content='0; URL=index.php' />";
+      echo "<meta http-equiv='Refresh' content='60; URL=index.php' />";
     }
     if($time == $jdw6) {
-      echo "<meta http-equiv='Refresh' content='0; URL=index.php' />";
+      echo "<meta http-equiv='Refresh' content='60; URL=index.php' />";
     }
    ?>
    <!-- THE END AUTO REFRESH -->
@@ -66,9 +67,9 @@
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
               <ul class="nav side-menu">
-                <li><a><i class="fa fa-clock-o"></i> <span id="clock"></span> WIB </a></li>
-                <li><a><i class="fa fa-calendar"></i> <?php echo " " . theday(); " " . tanggalmaen() ?> </a></li>
-                <li><a><i class="fa fa-bullhorn"></i> <span>Belum punya Aplikasi Absen Workshop ? Scan sekarang juga! </span></a>
+                <li class="site_title">&nbsp;<span id="clock"></span> WIB </li>
+                <li><a><h4><?php echo " " . theday(); " " . tanggalmaen() ?></h4></a></li>
+                <li><a><h4> <span>Belum punya Aplikasi Absen Workshop ? Scan sekarang juga! </span> </h4></a></li>
                 <li><a><img src="images/scan-me.jpg" alt="www.workshop.com" style="width: 200px; height: 300px;"></a></li>
               </ul>
             </div>
@@ -88,9 +89,13 @@
                   </div>
                 </div>
                 <div class="x_content">
-                  <div class="demo-container" style="height: 240px">
+                  <div class="demo-container" style="height: auto">
+                    <!-- <div class="bs-example" data-example-id="simple-jumbotron"> -->
+                      <!-- <div class="jumbotron"> -->
                     <!-- slider.php -->
-                    <?php include 'slider.php'; ?>
+                        <?php include 'slider.php'; ?>
+                      <!-- </div> -->
+                    <!-- </div> -->
                   </div>
                 </div>
               </div>
@@ -99,7 +104,7 @@
             <!-- JADWAL LANGUSNG BAG.ATAS -->
             <div class="row">
               <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="x_panel fixed_height_320" style="margin-left: 10px;">
+                <div class="x_panel " style="margin-left: 10px;">
                   <div class="x_title">
                     <h2><span class="fa fa-bell"></span> <b>Jadwal Yang Sedang Berlangsung</b></h2>
                     <div class="clearfix"></div>
@@ -116,7 +121,7 @@
           <!-- MULAI KONTEN BAWAH -->
           <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="x_panel fixed_height_320">
+              <div class="x_panel">
                 <div class="x_title">
                   <h2><span class="fa fa-bell"></span> <b>Jadwal Yang Sedang Berlangsung </b></h2>
                   <div class="clearfix"></div>
@@ -128,25 +133,33 @@
             </div>
 
             <div class="col-md-4 pull-right">
-              <div class="x_panel fixed_height_320">
+              <div class="x_panel">
                 <div class="x_title">
                   <h2><span class="fa fa-calendar"></span> <b>Jadwal Selanjutnya </b></h2>
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
+                <div class="bs-example" data-example-id="simple-jumbotron">
+                    <div class="jumbotron">
                   <?php include 'jadwal_selanjutnya_orkom.php'; ?>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
 
             <div class="col-md-4 pull-right">
-              <div class="x_panel fixed_height_320">
+              <div class="x_panel">
                 <div class="x_title">
                   <h2><span class="fa fa-bell"></span> <b>Jadwal Selanjutnya </b></h2>
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
+                  <div class="bs-example" data-example-id="simple-jumbotron">
+                    <div class="jumbotron">
                   <?php include 'jadwal_selanjutnya_ddi.php'; ?>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -176,7 +189,7 @@
   <!-- Zoom in -->
   <script type="text/javascript">
     function zoom() {
-      document.body.style.zoom = "90%"
+      document.body.style.zoom = "100%"
     }
   </script>
 

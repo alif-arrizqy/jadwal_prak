@@ -44,21 +44,27 @@ CREATE TABLE `tb_asdos` (
   `nama_asdos` varchar(50) DEFAULT NULL,
   `gambar` text DEFAULT NULL,
   PRIMARY KEY (`id_asdos`)
-) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `tb_asdos` */
 
 insert  into `tb_asdos`(`id_asdos`,`nama_asdos`,`gambar`) values 
 (1,'Novia','06022020163058novia.jpg'),
 (2,'Atik','06022020163142atik.jpg'),
-(3,'Naya','06022020163154nay.jpg'),
 (4,'Irham','06022020163202irham.jpg'),
 (5,'Alif','06022020163217aing.jpg'),
 (6,'Arif','06022020163303arif.jpg'),
 (7,'Dewi','06022020163314dew.jpg'),
 (8,'M. Rizki','06022020163327bolson.jpg'),
 (9,'Gozali','06022020163341gozali.jpg'),
-(10,'Komang','06022020163351km.jpg');
+(10,'Komang','06022020163351km.jpg'),
+(11,'Naya','10022020015906naya.jpg'),
+(14,'Dwi','11022020154615dwi.jpg'),
+(15,'Haura','11022020154625haura.jpg'),
+(16,'Nurman','11022020154640nurman.jpg'),
+(17,'Sigit','11022020154652sigit.jpg'),
+(18,'Amanda','11022020154705amanda.jpg'),
+(19,'Utep','11022020154749utep.jpg');
 
 /*Table structure for table `tb_jdwl_ganjil` */
 
@@ -94,15 +100,21 @@ CREATE TABLE `tb_jdwl_genap` (
   `jam_mulai` time DEFAULT NULL,
   `jam_selesai` time DEFAULT NULL,
   PRIMARY KEY (`id_jdwl_genap`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `tb_jdwl_genap` */
 
 insert  into `tb_jdwl_genap`(`id_jdwl_genap`,`hari`,`matkul`,`kelas`,`asdos_1`,`asdos_2`,`lab`,`jam_mulai`,`jam_selesai`) values 
-(1,'Monday','Jaringan Komputer','3/L','Novia','Atik','Lab. Organisasi Komputer','07:30:00','09:00:00'),
-(2,'Monday','Sistem Pemrograman Mikroprosessor','3/G','Naya','Alif','Lab. Mikrokontroller','07:30:00','09:00:00'),
-(3,'Monday','Keamanan Jaringan','5/E','Irham','Arif','Lab. Organisasi Komputer','09:00:00','10:30:00'),
-(4,'Monday','Sistem Digital 2','3/J','Komang','Gozali','Lab. Mikrokontroller','09:00:00','10:30:00');
+(5,'Monday','Sistem Instrumentasi','3/L','Novia','Haura','Lab. Mikrokontroller','07:30:00','09:00:00'),
+(6,'Monday','Sistem Instrumentasi','3/A','Atik','Irham','Lab. Mikrokontroller','09:00:00','10:30:00'),
+(7,'Monday','Mobile Programming','5/E','Naya','Dwi','Lab. Mikrokontroller','10:30:00','12:00:00'),
+(8,'Monday','Sistem Digital 2','3/G','Sigit','Nurman','Lab. Mikrokontroller','13:00:00','14:30:00'),
+(9,'Monday','Sistem Pemrograman Mikroprosessor','5/B','Amanda','Utep','Lab. Mikrokontroller','14:30:00','16:00:00'),
+(10,'Monday','Jaringan Komputer','3/I','M. Rizki','Dewi','Lab. Organisasi Komputer','07:30:00','09:00:00'),
+(11,'Monday','Keamanan Jaringan','5/D','Utep','Komang','Lab. Organisasi Komputer','09:00:00','10:30:00'),
+(12,'Monday','Pemrograman Data Analis','5/F','Dwi','Amanda','Lab. Organisasi Komputer','10:30:00','12:00:00'),
+(13,'Monday','Organisasi Komputer','2/J','Sigit','Nurman','Lab. Organisasi Komputer','13:00:00','14:30:00'),
+(14,'Monday','Pemrograman Data Analis','5/A','Haura','Komang','Lab. Organisasi Komputer','14:30:00','16:00:00');
 
 /*Table structure for table `tb_matkul_ganjil` */
 
@@ -135,7 +147,7 @@ CREATE TABLE `tb_matkul_genap` (
   `kode_matkul` varchar(20) DEFAULT NULL,
   `nama_matkul` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4;
 
 /*Data for the table `tb_matkul_genap` */
 
@@ -146,7 +158,8 @@ insert  into `tb_matkul_genap`(`id`,`kode_matkul`,`nama_matkul`) values
 (4,'pda','Pemrograman Data Analis'),
 (5,'si','Sistem Instrumentasi'),
 (6,'sigit2','Sistem Digital 2'),
-(7,'sispemik','Sistem Pemrograman Mikroprosessor');
+(7,'sispemik','Sistem Pemrograman Mikroprosessor'),
+(8,'mopro','Mobile Programming');
 
 /*Table structure for table `tb_slider` */
 
