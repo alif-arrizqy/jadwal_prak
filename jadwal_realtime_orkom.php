@@ -44,7 +44,8 @@ if ($cekdata > 0) {
         }
       }
     } ?>
-      <br><br><br><br><br><br><br><br>
+      <!-- <br><br><br><br><br><br><br><br> -->
+      <?php for($nb=0; $nb<110; $nb++){ ?> &nbsp; <?php } ?>
       <h3><span class="fa fa-clock-o"></span> <?= $d['jam_mulai'] . " - " . $d['jam_selesai']; ?> </h3>
       <h3><span class="fa fa-book"></span> <strong><?= $d['matkul']; ?> - <?= $d['kelas']; ?></strong></h3>
       <h3><span class="glyphicon glyphicon-user"></span> <?= $asd1 . " & " . $asd2 ?> </h3>

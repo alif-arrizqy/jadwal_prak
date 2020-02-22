@@ -89,7 +89,7 @@
                   </div>
                 </div>
                 <div class="x_content">
-                  <div class="demo-container" style="height: auto">
+                  <div class="demo-container" style="height: 300px">
                     <!-- <div class="bs-example" data-example-id="simple-jumbotron"> -->
                       <!-- <div class="jumbotron"> -->
                     <!-- slider.php -->
@@ -121,7 +121,7 @@
           <!-- MULAI KONTEN BAWAH -->
           <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-12">
-              <div class="x_panel">
+              <div class="x_panel" >
                 <div class="x_title">
                   <h2><span class="fa fa-bell"></span> <b>Jadwal Yang Sedang Berlangsung </b></h2>
                   <div class="clearfix"></div>
@@ -133,14 +133,14 @@
             </div>
 
             <div class="col-md-4 pull-right">
-              <div class="x_panel">
+              <div class="x_panel" style="height: 400px">
                 <div class="x_title">
                   <h2><span class="fa fa-calendar"></span> <b>Jadwal Selanjutnya </b></h2>
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
                 <div class="bs-example" data-example-id="simple-jumbotron">
-                    <div class="jumbotron">
+                    <div class="jumbotron" style="height: 300px">
                   <?php include 'jadwal_selanjutnya_orkom.php'; ?>
                     </div>
                   </div>
@@ -149,14 +149,14 @@
             </div>
 
             <div class="col-md-4 pull-right">
-              <div class="x_panel">
+              <div class="x_panel" style="height: 400px">
                 <div class="x_title">
                   <h2><span class="fa fa-bell"></span> <b>Jadwal Selanjutnya </b></h2>
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
                   <div class="bs-example" data-example-id="simple-jumbotron">
-                    <div class="jumbotron">
+                    <div class="jumbotron" style="height: 300px">
                   <?php include 'jadwal_selanjutnya_ddi.php'; ?>
                     </div>
                   </div>
